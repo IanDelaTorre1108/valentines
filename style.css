@@ -1990,47 +1990,48 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 25px 18px; /* better side spacing for small screen */
   text-align: center;
 }
 
 .valentine-title {
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 1.9rem; /* reduced from 3em */
+  font-weight: 700;
   color: #fff;
-  text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
-  margin-bottom: 20px;
+  text-shadow: 0 0 8px #ff69b4;
+  margin-bottom: 18px;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-  from { text-shadow: 0 0 10px #ff69b4; }
-  to { text-shadow: 0 0 25px #ff1493, 0 0 40px #ff69b4; }
+  from { text-shadow: 0 0 8px #ff69b4; }
+  to { text-shadow: 0 0 18px #ff1493; }
 }
 
 .valentine-message {
-  max-width: 650px;
-  padding: 25px 30px;
+  width: 100%;
+  max-width: 340px; /* perfect for 390px screen */
+  padding: 20px;
 
-  font-size: 1.5rem; /* fixed size (was 0.5rem too small) */
+  font-size: 0.95rem; /* better reading size */
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.6;
 
   color: #fff;
 
-  background: rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 
-  animation: fadeIn 1.5s ease forwards;
+  animation: fadeIn 1.3s ease forwards;
   opacity: 0;
 }
 
 @keyframes fadeIn {
   from {
-    transform: translateY(20px);
+    transform: translateY(15px);
     opacity: 0;
   }
   to {
@@ -2038,5 +2039,3 @@ body {
     opacity: 1;
   }
 }
-
-
