@@ -2012,7 +2012,7 @@ body {
   max-width: 650px;
   padding: 25px 30px;
 
-  font-size: 1.1rem; /* fixed size (was 0.5rem too small) */
+  font-size: 2rem; /* fixed size (was 0.5rem too small) */
   font-weight: 400;
   line-height: 1.8;
 
@@ -2038,6 +2038,7 @@ body {
     opacity: 1;
   }
 }
+
 
 
 
