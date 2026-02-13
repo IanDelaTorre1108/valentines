@@ -1984,16 +1984,21 @@ body {
   }
 }
 
-.valentine-title {
-  position: fixed;
-  top: 30px;
-  width: 100%;
+.valentine-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   text-align: center;
-  font-size: 2.5em;
+}
+
+.valentine-title {
+  font-size: 1.5em;
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
-  z-index: 999;
+  margin-bottom: 5px;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -2001,4 +2006,36 @@ body {
   from { text-shadow: 0 0 10px #ff69b4; }
   to { text-shadow: 0 0 25px #ff1493, 0 0 40px #ff69b4; }
 }
+
+.valentine-message {
+  max-width: 700px;
+  padding: 12px 30px;
+
+  font-size: .8rem; /* fixed size (was 0.5rem too small) */
+  font-weight: 100;
+  line-height: 1;
+
+  color: #fff;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
