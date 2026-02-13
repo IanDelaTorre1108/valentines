@@ -1995,7 +1995,7 @@ body {
 }
 
 .valentine-title {
-  font-size: 1.9rem; /* reduced from 3em */
+  font-size: 2rem; /* reduced from 3em */
   font-weight: 700;
   color: #fff;
   text-shadow: 0 0 8px #ff69b4;
@@ -2013,7 +2013,7 @@ body {
   max-width: 340px; /* perfect for 390px screen */
   padding: 20px;
 
-  font-size: 0.95rem; /* better reading size */
+  font-size: 1.5rem; /* better reading size */
   font-weight: 400;
   line-height: 1.2;
 
